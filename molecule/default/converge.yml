@@ -5,5 +5,5 @@
     login_public_key: ssh-ed25519 RASPI
     login_group: berry
   roles:
-    - role: ansible-raspberry-login
-      tags: login
+    - role: ansible-raspberry-ssh-login
+      tags: sshlogin
