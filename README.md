@@ -7,7 +7,7 @@ An Ansible role that manages ssh login on Raspberry Pi OS.
 ## Install
 
 ```
-$ ansible-galaxy install escalate.raspberry-ssh-login
+$ ansible-galaxy install escalate.raspberry_ssh_login
 ```
 
 ## Role Variables
@@ -26,7 +26,7 @@ This role relies on the following dependencies:
 ```
 - hosts: all
   roles:
-    - role: escalate.raspberry-ssh-login
+    - role: escalate.raspberry_ssh_login
       tags: sshlogin
 ```
 
