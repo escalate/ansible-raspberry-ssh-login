@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: raspberry_ssh_login
+  role_name: ssh_login
   namespace: escalate
   author: Felix Boerner
   description: Manage ssh login on Raspberry Pi OS
