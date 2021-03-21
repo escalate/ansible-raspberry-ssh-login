@@ -9,9 +9,11 @@ def test_login_user(host):
     u = host.user("rasp")
     assert u.exists
 
-    f = host.file("/home/rasp/.ssh/authorized_keys").content_string
+    f = host.file("/home/rasp/.ssh/authorized_keys")
+    assert f.is_file
+
     public_key = "ssh-ed25519 RASPI"
-    assert public_key in f
+    assert public_key in f.content_string
 
 
 def test_root_user(host):
