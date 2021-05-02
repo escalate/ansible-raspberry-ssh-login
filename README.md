@@ -1,6 +1,6 @@
-# Ansible Role: Raspberry - SSH Login
+[![Molecule](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/molecule.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/molecule.yml)
 
-[![CI](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/ci.yml)
+# Ansible Role: Raspberry - SSH Login
 
 An Ansible role that manages ssh login on Raspberry Pi OS.
 
