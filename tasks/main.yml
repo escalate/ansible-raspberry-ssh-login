@@ -1,11 +1,11 @@
 - name: Create login group
   ansible.builtin.group:
-    name: "{{ login_group }}"
+    name: "{{ ssh_login_group }}"
     gid: 2000
 
 - name: Create login user
   ansible.builtin.user:
-    name: "{{ login_user }}"
+    name: "{{ ssh_login_user }}"
     uid: 2000
     groups:
       - sudo
@@ -13,8 +13,8 @@
 
 - name: Add authorized key for login user
   ansible.posix.authorized_key:
-    user: "{{ login_user }}"
-    key: "{{ login_public_key }}"
+    user: "{{ ssh_login_user }}"
+    key: "{{ ssh_login_public_key }}"
     exclusive: true
 
 - name: Disable login for root user
