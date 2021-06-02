@@ -31,6 +31,14 @@
     key: "{{ ssh_login_public_key }}"
     exclusive: true
 
+- name: Create sudoers configuration
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers.d/99_login
+    line: "%{{ ssh_login_group }} ALL=(ALL) NOPASSWD: ALL"
+    mode: 0440
+    create: true
+    validate: "visudo -cf %s"
+
 - name: Disable login for root user
   ansible.builtin.user:
     name: root

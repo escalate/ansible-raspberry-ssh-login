@@ -17,6 +17,12 @@ def test_login_user(host):
     assert public_key in f.content_string
 
 
+def test_sudoers_config(host):
+    """Check sudoers config"""
+    f = host.file("/etc/sudoers.d/99_login")
+    assert f.is_file
+
+
 def test_root_user(host):
     """Check root user"""
     u = host.user("root")
