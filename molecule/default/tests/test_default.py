@@ -8,6 +8,7 @@ def test_login_user(host):
 
     u = host.user("rasp")
     assert u.exists
+    assert u.group == "berry"
 
     f = host.file("/home/rasp/.ssh/authorized_keys")
     assert f.is_file

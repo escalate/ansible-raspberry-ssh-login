@@ -7,8 +7,22 @@
   ansible.builtin.user:
     name: "{{ ssh_login_user }}"
     uid: 2000
+    group: "{{ ssh_login_group }}"
     groups:
+      - adm
+      - dialout
+      - cdrom
       - sudo
+      - audio
+      - video
+      - plugdev
+      - games
+      - users
+      - input
+      - netdev
+      - spi
+      - i2c
+      - gpio
     create_home: true
 
 - name: Add authorized key for login user
