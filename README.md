@@ -19,7 +19,7 @@ Please see [defaults/main.yml](https://github.com/escalate/ansible-raspberry-ssh
 This role relies on the following dependencies:
 
 * Roles: None
-* Collections: [collections.yml](https://github.com/escalate/ansible-raspberry-ssh-login/blob/master/collections.yml)
+* Collections: [requirements.yml](https://github.com/escalate/ansible-raspberry-ssh-login/blob/master/requirements.yml)
 
 ## Example Playbook
 
