@@ -2,7 +2,7 @@
 
 # Ansible Role: Raspberry - SSH Login
 
-An Ansible role that manages ssh login on Raspberry Pi OS (Debian Bullseye).
+An Ansible role that manages ssh login on Raspberry Pi OS (Debian Bookworm).
 
 ## Install
 
