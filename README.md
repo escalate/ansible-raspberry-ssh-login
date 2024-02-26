@@ -1,14 +1,8 @@
-[![Molecule](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/molecule.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/molecule.yml)
+[![Test](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/test.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-ssh-login/actions/workflows/test.yml)
 
 # Ansible Role: Raspberry - SSH Login
 
 An Ansible role that manages ssh login on Raspberry Pi OS (Debian Bookworm).
-
-## Install
-
-```
-$ ansible-galaxy install escalate.ssh_login
-```
 
 ## Role Variables
 
@@ -20,6 +14,12 @@ This role relies on the following dependencies:
 
 * Roles: None
 * Collections: [requirements.yml](https://github.com/escalate/ansible-raspberry-ssh-login/blob/master/requirements.yml)
+
+## Installation
+
+```
+$ ansible-galaxy role install escalate.ssh_login
+```
 
 ## Example Playbook
 
