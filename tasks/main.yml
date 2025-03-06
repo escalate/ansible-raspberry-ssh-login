@@ -35,7 +35,7 @@
   ansible.builtin.lineinfile:
     path: /etc/sudoers.d/99_login
     line: "%{{ ssh_login_group }} ALL=(ALL) NOPASSWD: ALL"
-    mode: 0440
+    mode: "0440"
     create: true
     validate: "visudo -cf %s"
 
