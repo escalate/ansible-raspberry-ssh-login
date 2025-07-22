@@ -19,6 +19,7 @@
       - games
       - users
       - input
+      - render
       - netdev
       - spi
       - i2c
